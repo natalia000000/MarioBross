@@ -16,10 +16,26 @@ public abstract class Personaje {
 
     public abstract void moverse();
 
+
+
     public int perderVida(){
-        System.out.println("Nombre jugador: "+nombre);
-        System.out.println("Vidas restantes: " + vidas);
+        vidas=5;
+        vidas= 5-1;
+
+        System.out.println("Vidas restantes:" + vidas);
+
+        return vidas;
         
+    }
+
+    public final int recogerMoneda(){
+        monedas=0;
+
+        monedas=0+1;
+
+        System.out.println("Cantidad de monedas es: " + monedas);
+
+        return monedas;
     }
 
 }
